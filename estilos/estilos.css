@@ -1,0 +1,139 @@
+.box{
+    border-radius: 6px;
+    height: 100px;
+    width: 200px;
+    margin:60px auto;
+}
+
+.box1{
+    background-color: mediumorchid;
+}
+
+.box2{
+    background-color: magenta;
+}
+
+/*transformación*/
+
+.box:hover {
+    transform: scale(4);
+}
+
+/*transición*/
+.box2{
+    transition-property:all;
+    transition-duration:4s;
+}
+
+.circle1, .circle2, .circle3, .circle4,
+.circle5{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin:15px;
+}
+
+.circle1{
+    background-color: coral;
+    transition: all 2s ease;
+
+}
+
+.circle2{
+    background-color: cornflowerblue;
+    transition: all 2s ease-in;
+}
+
+.circle3{
+    background-color: crimson;
+    transition: all 2s ease-in-out;
+}
+
+.circle4{
+    background-color: #ff8c00;
+    transition: all 2s ease-out;
+}
+.circle5{
+    background-color: dimgrey;
+    transition: all 2s step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+    transform: translateX(400px);
+}
+
+.square1, .square2{
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
+    margin:100px;
+    position: absolute;
+}
+
+.square1{
+    background-color: red;
+}
+
+.square2:hover{
+    transform: translate(80px,40px);
+}
+.square2{
+    background-color: green;
+    transition: all 2s;
+}
+
+
+.combinado{
+    background-color: blueviolet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    transition: all 4s;
+}
+
+.combinado:hover{
+    transform: rotate(-90deg) scale(3)  ;
+}
+
+.animaciones{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+   
+}
+
+.animaciones:hover{
+    animation: change-color 6s;
+}
+
+@keyframes change-color{
+    0%{
+        background-color:#ff8c00 ;
+    }
+    25%{
+        background-color: crimson;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    75%{
+        width:300px;
+    }
+    100%{
+        background-color: cadetblue;
+    }
+}
+
+
+
+
+
+
+
+
+
+
